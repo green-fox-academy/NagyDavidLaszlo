@@ -1,0 +1,38 @@
+h1 {
+border: color: black 2 px solid;
+background-color: grey;
+padding: 30px;
+width: 97%;
+margin:0;
+}
+
+body{
+margin:0;
+background-image: url("https://media1.tenor.com/images/0de27657daa673ccd7a60cf6919084d9/tenor.gif?itemid=4848690");
+background-size: 100%;
+}
+
+.First-part{
+margin:30px;
+}
+
+.Button{
+margin: 20px 0px;
+}
+
+.Receptmirol{
+font-weight: bold;
+font-size: 23px;
+}
+
+.recept{
+font-family: 'Franklin Gothic Medium';
+font-size: 18px
+}
+
+.Visitorpost{
+border: purple solid 5px;
+padding:15px;
+margin:10px;
+
+}
