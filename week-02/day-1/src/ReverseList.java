@@ -14,10 +14,10 @@ public class ReverseList {
         int[] reverse = new int[aj.length];
 
         for (int i = 0; i < aj.length; i++) {
-            reverse[i] = aj[aj.length-1 - i];
+            reverse[i] = aj[aj.length - 1 - i];
         }
 
-        for (int i = 0; i <reverse.length ; i++) {
+        for (int i = 0; i < reverse.length; i++) {
             System.out.println(reverse[i]);
         }
     }
