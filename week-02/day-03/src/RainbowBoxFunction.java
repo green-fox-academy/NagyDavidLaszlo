@@ -5,12 +5,11 @@ import java.util.Random;
 
 import static javax.swing.JFrame.EXIT_ON_CLOSE;
 
-public class CenterBoxFunction {
-
-    public static void centeredRectangles(Graphics graphics)
+public class RainbowBoxFunction {
 
 
-    {
+    public static void coloringRainbow(int x, Graphics graphics) {
+
 
         Random rand = new Random();
 
@@ -19,47 +18,44 @@ public class CenterBoxFunction {
         float b = rand.nextFloat();
 
         Color randomColor = new Color(r, g, b);
-        int n = rand.nextInt(300);
-        int m = rand.nextInt(300);
-        int k = rand.nextInt(300);
 
 
+        graphics.setColor(randomColor);
+        graphics.fillRect(x, x, WIDTH - 2*x, HEIGHT - 2*x);
 
-        graphics.setColor(new Color(r,b,g));
 
-
-
-        graphics.drawRect(250 - (n / 2), 250 - (n / 2), n, n);
     }
 
 
     public static void mainDraw(Graphics graphics) {
-        // create a function that draws one square and takes 2 parameters:
-        // the square size and the graphics
-        // and draws a square of that size to the center of the canvas.
-        // draw 3 squares with that function.
-        // avoid code duplication.
+        // Create a square drawing function that takes 3 parameters:
+        // The square size, the fill color, graphics
+        // and draws a square of that size and color to the center of the canvas.
+        // Create a loop that fills the canvas with rainbow colored squares (red, orange, yellow, green, blue, indigo, violet).
 
+        int z =0;
+        for (int i = 0; i < 7; i++) {
 
-        for (int i = 0; i < 3; i++) {
-
-
-            centeredRectangles(graphics);
-
+            coloringRainbow(z, graphics);
+           z = z+25;
         }
 
-
-
-
 /*
-        Random rand = new Random();
-        int n = rand.nextInt(300);  //éle
 
+            Random rand = new Random();
 
-        graphics.setColor(Color.magenta);
-        graphics.drawRect(250-(n/2), 250-(n/2),n,n);
+            float r = rand.nextFloat();
+            float g = rand.nextFloat();
+            float b = rand.nextFloat();
+
+            Color randomColor = new Color(r, g, b);
+
+            int x = 0;
+
+            graphics.setColor(randomColor);
+            graphics.fillRect(x,x, WIDTH - x, HEIGHT - x);
+
 */
-// 1.pozi x = 250-(n/2)
 
 
     }
