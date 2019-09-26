@@ -1,0 +1,25 @@
+package fleet;
+
+import java.util.ArrayList;
+
+
+public class Fleet {
+  private ArrayList<Thing> things;      // új element adhatsz hozzá ezzel a "Fleet" classhoz
+
+  public Fleet() {
+    things = new ArrayList<>();
+  }
+
+  public void add(Thing thing) {
+    things.add(thing);
+  }
+
+  @Override
+  public String toString() {
+    String result = "";
+    for(int i = 0; i < things.size(); i++) {
+      result += (i+1) + ". " + things.get(i) + "\n";
+    }
+    return result;
+  }
+}
