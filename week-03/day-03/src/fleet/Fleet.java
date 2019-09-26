@@ -2,9 +2,12 @@ package fleet;
 
 import java.util.ArrayList;
 
-
 public class Fleet {
-  private ArrayList<Thing> things;      // új element adhatsz hozzá ezzel a "Fleet" classhoz
+
+
+
+  private ArrayList<Thing> things;
+
 
   public Fleet() {
     things = new ArrayList<>();
