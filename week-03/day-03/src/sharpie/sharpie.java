@@ -27,7 +27,7 @@ public sharpie (String color, float width){
 
 public void use(){
 
-  inkAmmount=inkAmmount-2;
+  inkAmmount=inkAmmount-10;
 
 }
 }

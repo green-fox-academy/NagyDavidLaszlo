@@ -13,12 +13,36 @@ We can use() the sharpie objects
 which decreases inkAmount
   */
 
+sharpie red = new sharpie ("red",(float) 1.0);
+sharpie purple = new sharpie ("purple",(float) 1.2);
+sharpie blue = new sharpie ("blue",(float) 0.9);
+sharpie orange = new sharpie ("orange",(float) 1.1);
+sharpie green = new sharpie ("green",(float) 1.05);
 
-sharpie mySharpie = new sharpie("pink",30);
 
-mySharpie.use();
+SharpieSet mySharpies = new SharpieSet();
+mySharpies.sharpieList.add(red);
+mySharpies.sharpieList.add(purple);
+mySharpies.sharpieList.add(blue);
+mySharpies.sharpieList.add(orange);
+mySharpies.sharpieList.add(green);
 
-    System.out.println(mySharpie.inkAmmount);
+
+// sharpie mySharpie = new sharpie("pink",30);
+
+
+
+    for (int i = 0; i <10; i++) {
+    red.use();
+
+    }
+
+
+
+    System.out.println(mySharpies.countUsable());
+    mySharpies.removeTrash();
+
+    System.out.println(red.inkAmmount);
 
 
   }

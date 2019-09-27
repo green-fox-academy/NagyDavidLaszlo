@@ -23,6 +23,7 @@ public class MainCarStation {
     molStation.refill(toyota);
 
     System.out.println(toyota.gasAmount);
+    System.out.println(molStation.gasAmount);
   }
 
 }

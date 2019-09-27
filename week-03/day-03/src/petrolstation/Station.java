@@ -17,9 +17,9 @@ initialize capacity -> 100
 
   int gasAmount = 10000;
 
-  public void refill(Car toyota){
-    this.gasAmount -=100;
-    toyota.gasAmount+=100;
+  public void refill(Car anyCar){
+    this.gasAmount -=anyCar.capacity;
+    anyCar.gasAmount+=anyCar.capacity;
 
   }
 
